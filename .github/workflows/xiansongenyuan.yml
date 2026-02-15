@@ -1,0 +1,25 @@
+name: xiansongenyuan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiansongenyuan
+        env:
+          cshp6: ${{ secrets.cshp6 }}
+        run: |
+          echo $cshp6 | jq -r .z653 | /bin/bash
+          echo $f0851 | jq -r .qnhe900 | /bin/bash
+          echo $r58931 | jq -r .pdb19885 | /bin/bash
+          echo $rom3 | jq -r .bw9593 | /bin/bash
+          echo $lcvsm28835 | jq -r .seig64 | /bin/bash
+          echo $vngjg904 | jq -r .f944 | /bin/bash
+          echo $ezg39 | jq -r .j885 | /bin/bash
+
